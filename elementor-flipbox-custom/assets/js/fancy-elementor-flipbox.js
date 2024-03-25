@@ -4,6 +4,8 @@
 	 * @param $ The jQuery alias
 	 */
 
+
+
 	var WidgetFancyElementorFlipboxHandler = function( $scope, $ ) {
 		//console.log( $scope );
 		var tp_fb = $('.tp-flipbox');
@@ -25,3 +27,23 @@
 		elementorFrontend.hooks.addAction( 'frontend/element_ready/fancy-elementor-flipbox.default', WidgetFancyElementorFlipboxHandler );
 	} );
 } )( jQuery );
+
+
+		jQuery(document).ready(function($) {
+
+			$('.tp-flipbox__btn_open').click(function(event) {
+				event.preventDefault();
+				var tp = $(this).closest('.tp-flipbox');
+				tp.addClass('flipbox_add');
+				//console.log(tp);
+			});
+
+			$('.tp-flipbox__btn_close').click(function(event) {
+				event.preventDefault();
+				var tp = $(this).closest('.tp-flipbox');
+				tp.removeClass('flipbox_add');
+				//console.log(tp);
+			});
+
+
+		});

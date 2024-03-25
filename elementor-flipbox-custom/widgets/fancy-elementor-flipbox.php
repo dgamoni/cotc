@@ -40,7 +40,7 @@ class Fancy_Elementor_Flipbox extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Fancy Elementor Flipbox', 'fancy-elementor-flipbox' );
+		return __( 'Elementor Flipbox Custom', 'fancy-elementor-flipbox' );
 	}
 
 	/**
@@ -576,6 +576,19 @@ color tab
 					);
 
 					$this->add_control(
+					  'tp_flipbox_b_btn_text_back',
+					  [
+					    'label' => __( 'Button Text back', 'fancy-elementor-flipbox' ),
+					    'type' => Controls_Manager::TEXT,
+					    'default'     => __( 'View All', 'fancy-elementor-flipbox' ),
+					 'placeholder' => __( 'Please enter the flipbox button text', 'fancy-elementor-flipbox' ),
+					 'condition' => [
+	 					'tp_flipbox_show_btn' => 'yes',
+	 				],
+					  ]
+					);
+
+					$this->add_control(
 			  'tp_flipbox_b_btn_url',
 			  [
 			     'label' => __( 'Button URL', 'fancy-elementor-flipbox' ),
@@ -685,28 +698,15 @@ $tp_flipbox_f_bg_color = $settings['tp_flipbox_f_bg_color'];
 	  echo '        <div class="tp-flipbox__front" style=" background-color:'.$tp_flipbox_f_bg_color.';background-image: url('.$tp_bg_img_front['url'].');">';
 
 	  echo '            <div class="tp-flipbox__content">';
-	  echo '                <div class="tp-flipbox__icon-front">';
+	  // echo '                <div class="tp-flipbox__icon-front">';
 
-	  echo '                    <img src="'.$tp_icon_front["url"].'"/>';
+	  // echo '                    <img src="'.$tp_icon_front["url"].'"/>';
 
 
-	  echo '                </div>';
-	  echo '                <' . esc_html($settings['title_tag']) . ' class="tp-flipbox__title-front">'.$settings['tp_flipbox_f_title'].'</' . esc_html($settings['title_tag']) . '>';
+	  // echo '                </div>';
+	  //echo '                <' . esc_html($settings['title_tag']) . ' class="tp-flipbox__title-front">'.$settings['tp_flipbox_f_title'].'</' . esc_html($settings['title_tag']) . '>';
 	  echo '                <' . esc_html($settings['content_tag']) . ' class="tp-flipbox__desc-front">'.$settings['tp_flipbox_f_desc'].'</' . esc_html($settings['content_tag']) . '>';
-	  echo '            </div>';
-	  echo '        </div>';
-	  echo '        <div class="tp-flipbox__back" style="background-image: url('.$tp_bg_img_back['url'].');" >';
-
-	  echo '            <div class="tp-flipbox__content">';
-		echo '                <div class="tp-flipbox__icon-back">';
-
-	  echo '                    <img src="'.$tp_icon_back["url"].'"/>';
-
-
-	  echo '                </div>';
-	  echo '                <' . esc_html($settings['title_tag']) . ' class="tp-flipbox__title-back">'.$settings['tp_flipbox_b_title'].'</' . esc_html($settings['title_tag']) . '>';
-		echo '                <' . esc_html($settings['content_tag']) . ' class="tp-flipbox__desc-back">'.$settings['tp_flipbox_b_desc'].'</' . esc_html($settings['content_tag']) . '>';
-		if($tp_flipbox_show_btn == "yes"){
+	if($tp_flipbox_show_btn == "yes"){
 	  echo '               <div class="tp-flipbox__action">';
 		$btn_external = "";
 		$btn_nofollow = "";
@@ -718,7 +718,35 @@ $tp_flipbox_f_bg_color = $settings['tp_flipbox_f_bg_color'];
 			$btn_nofollow = ' rel="nofollow" ';
 		}
 
-	  echo '                    <a ' . $btn_external . ' ' . $btn_nofollow . ' href="'.$settings['tp_flipbox_b_btn_url']['url'].'" class="tp-flipbox__btn">'.$settings['tp_flipbox_b_btn_text'].'</a>';
+	  echo '                    <a ' . $btn_external . ' ' . $btn_nofollow . ' href="'.$settings['tp_flipbox_b_btn_url']['url'].'" class="tp-flipbox__btn tp-flipbox__btn_open">'.$settings['tp_flipbox_b_btn_text'].'</a>';
+	  echo '                   </div>';
+	}	  
+	  echo '            </div>';
+	  echo '        </div>';
+	  echo '        <div class="tp-flipbox__back" style="background-image: url('.$tp_bg_img_back['url'].');" >';
+
+	  echo '            <div class="tp-flipbox__content">';
+		// echo '                <div class="tp-flipbox__icon-back">';
+
+	 //  echo '                    <img src="'.$tp_icon_back["url"].'"/>';
+
+
+	 //  echo '                </div>';
+	  //echo '                <' . esc_html($settings['title_tag']) . ' class="tp-flipbox__title-back">'.$settings['tp_flipbox_b_title'].'</' . esc_html($settings['title_tag']) . '>';
+		echo '                <' . esc_html($settings['content_tag']) . ' class="tp-flipbox__desc-back">'.$settings['tp_flipbox_b_desc'].'</' . esc_html($settings['content_tag']) . '>';
+	if($tp_flipbox_show_btn == "yes"){
+	  echo '               <div class="tp-flipbox__action">';
+		$btn_external = "";
+		$btn_nofollow = "";
+		if( $settings['tp_flipbox_b_btn_url']['is_external'] ) {
+			$btn_external = ' target="_blank" ';
+		}
+
+		if( $settings['tp_flipbox_b_btn_url']['nofollow'] ) {
+			$btn_nofollow = ' rel="nofollow" ';
+		}
+
+	  echo '                    <a ' . $btn_external . ' ' . $btn_nofollow . ' href="'.$settings['tp_flipbox_b_btn_url']['url'].'" class="tp-flipbox__btn tp-flipbox__btn_close">'.$settings['tp_flipbox_b_btn_text_back'].'</a>';
 	  echo '                   </div>';
 	}
 	  echo '                </div>';
