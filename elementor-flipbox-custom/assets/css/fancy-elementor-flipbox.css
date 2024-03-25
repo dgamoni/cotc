@@ -59,6 +59,8 @@
     top: 0;
     left: 0;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
 }
 .tp-flipbox__front {
     -webkit-transform: rotateY(0deg);
@@ -103,7 +105,7 @@
 }
 
 .tp-flipbox__action{
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-bottom: 15px;
     text-align: center;
 }

@@ -209,6 +209,28 @@ class Fancy_Elementor_Flipbox extends Widget_Base {
 		);
 
 
+		$this->add_control(
+			'tp_flipbox_f_align_items',
+			[
+				'label' => __( 'Align items', 'fancy-elementor-flipbox' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => '',
+				'options' => [
+					'' 				=> _x( 'Default', 'Background Control', 'elementor' ),
+					'normal' 		=> _x( 'normal', 'Background Control', 'elementor' ),
+					'flex-start' 	=> _x( 'flex-start', 'Background Control', 'elementor' ),
+					'flex-end' 		=> _x( 'flex-end', 'Background Control', 'elementor' ),
+					'center' 		=> _x( 'center', 'Background Control', 'elementor' ),
+					'baseline' 		=> _x( 'baseline', 'Background Control', 'elementor' ),
+					'stretch' 		=> _x( 'stretch', 'Background Control', 'elementor' ),
+				],
+				'selectors' => [
+					'{{WRAPPER}} .tp-flipbox__front' => 'align-items: {{VALUE}};',
+				],
+			]
+		);
+
+
 		$this->end_controls_section();
 
 
@@ -245,6 +267,47 @@ class Fancy_Elementor_Flipbox extends Widget_Base {
 				 'selectors' => [
  					'{{WRAPPER}} .tp-flipbox__front' => 'background-image: url({{URL}});',
  				]
+			]
+		);
+
+		$this->add_control(
+			'tp_flipbox_f_bg_img_position',
+			[
+				'label' => __( 'Front background position', 'fancy-elementor-flipbox' ),
+				'type' => Controls_Manager::SELECT,
+				'options' => [
+					'center center' => _x( 'Center Center', 'Background Control', 'elementor' ),
+					'center left' => _x( 'Center Left', 'Background Control', 'elementor' ),
+					'center right' => _x( 'Center Right', 'Background Control', 'elementor' ),
+					'top center' => _x( 'Top Center', 'Background Control', 'elementor' ),
+					'top left' => _x( 'Top Left', 'Background Control', 'elementor' ),
+					'top right' => _x( 'Top Right', 'Background Control', 'elementor' ),
+					'bottom center' => _x( 'Bottom Center', 'Background Control', 'elementor' ),
+					'bottom left' => _x( 'Bottom Left', 'Background Control', 'elementor' ),
+					'bottom right' => _x( 'Bottom Right', 'Background Control', 'elementor' ),
+				],
+				'default' => 'center center',
+				'selectors' => [
+					'{{WRAPPER}} .tp-flipbox__front' => 'background-position: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'tp_flipbox_f_bg_img_size',
+			[
+				'label' => __( 'Front background size', 'fancy-elementor-flipbox' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => '',
+				'options' => [
+					'' => _x( 'Default', 'Background Control', 'elementor' ),
+					'auto' => _x( 'Auto', 'Background Control', 'elementor' ),
+					'cover' => _x( 'Cover', 'Background Control', 'elementor' ),
+					'contain' => _x( 'Contain', 'Background Control', 'elementor' ),
+				],
+				'selectors' => [
+					'{{WRAPPER}} .tp-flipbox__front' => 'background-size: {{VALUE}};',
+				],
 			]
 		);
 
@@ -385,6 +448,18 @@ class Fancy_Elementor_Flipbox extends Widget_Base {
 						'placeholder' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies sem lorem, non ullamcorper neque tincidunt id.', 'fancy-elementor-flipbox' ),
 					]
 				);
+
+				$this->add_control(
+					'tp_flipbox_f_desc_padding',
+					[
+						'label' => __( 'Padding', 'fancy-elementor-flipbox' ),
+						'type' => Controls_Manager::DIMENSIONS,
+						'size_units' => [ 'px', '%', 'em' ],
+						'selectors' => [
+							'{{WRAPPER}} .tp-flipbox__desc-front' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						],
+					]
+				);				
 
 				$this->add_control(
 				  'tp_flipbox_b_title',
@@ -636,6 +711,21 @@ color tab
 				]
 			);
 
+			$this->add_control(
+				'tp_flipbox_b_btn_text_color_close',
+				[
+					'label' => __( 'Button Text Color (BACK)', 'fancy-elementor-flipbox' ),
+					'type' => Controls_Manager::COLOR,
+					'default' => '#ffffff',
+					'condition' => [
+					 'tp_flipbox_show_btn' => 'yes',
+				 ],
+					'selectors' => [
+						'{{WRAPPER}} .tp-flipbox__action a.tp-flipbox__btn_close' => 'color: {{VALUE}};',
+					]
+				]
+			);
+
 
 			$this->add_control(
 				'tp_flipbox_b_btn_bg_color_hover',
@@ -668,6 +758,32 @@ color tab
 				]
 			);
 
+			$this->add_control(
+				'tp_flipbox_b_btn_text_color_hover_back',
+				[
+					'label' => __( 'Button Text Color  On Hover (BACK)', 'fancy-elementor-flipbox' ),
+					'type' => Controls_Manager::COLOR,
+					'default' => '#f7f7f7',
+					'condition' => [
+					 'tp_flipbox_show_btn' => 'yes',
+				 ],
+					'selectors' => [
+						'{{WRAPPER}} .tp-flipbox__action a.tp-flipbox__btn_close:hover' => 'color: {{VALUE}};',
+					]
+				]
+			);
+
+				$this->add_control(
+					'tp_flipbox_b_btn_padding',
+					[
+						'label' => __( 'Button Padding', 'fancy-elementor-flipbox' ),
+						'type' => Controls_Manager::DIMENSIONS,
+						'size_units' => [ 'px', '%', 'em' ],
+						'selectors' => [
+							'{{WRAPPER}} .tp-flipbox__btn.tp-flipbox__btn_open' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						],
+					]
+				);
 
 $this->end_controls_section();
 	}

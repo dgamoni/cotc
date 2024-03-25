@@ -66,6 +66,7 @@ class Plugin {
 	 */
 	private function includes() {
 		require __DIR__ . '/widgets/fancy-elementor-flipbox.php';
+
 	}
 
 	/**
@@ -77,6 +78,7 @@ class Plugin {
 	 */
 	private function register_widget() {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Fancy_Elementor_Flipbox() );
+
 	}
 }
 
