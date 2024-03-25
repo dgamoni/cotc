@@ -279,9 +279,19 @@ div[data-elementor-type='footer'] .elementor-nav-menu--main .elementor-nav-menu 
     text-transform: uppercase;
     font-weight: bold;
 }
-.elementor-page.elementor-page-17 {
+.elementor-page.elementor-page-17,
+.elementor-page.elementor-page-1780 {
     background-color: #f3f3f3;
 }
+
+    .elementor-page-17 .slick-next,
+    .elementor-page-1780 .slick-next {
+        right: -40px !important;
+    }
+    .elementor-page-17 .slick-prev,
+    .elementor-page-1780 .slick-prev {
+        left: -40px !important;
+    }
 
 @media (max-width: 767px) {
 	div[data-elementor-type='footer'] .elementor-nav-menu--main .elementor-nav-menu a {
@@ -300,4 +310,46 @@ div[data-elementor-type='footer'] .elementor-nav-menu--main .elementor-nav-menu 
 	.elementor-text-editor br {
 		display: none;
 	}
+
+
+
+
+}
+
+@media (max-width: 480px) {
+
+    .elementor-page-17 .slick-next {
+        right: -16px !important;
+    }
+    .elementor-page-17 .slick-prev {
+        left: -16px !important;
+    }
+
+}
+
+.elementor-15 .elementor-element.elementor-element-5675156,
+.elementor-15 .elementor-element.elementor-element-0f0b8af {
+	display: none;
+}
+.elementor-35 .elementor-element.elementor-element-2f119d3 > .elementor-element-populated {
+    border-width: 0 !important;
+}
+.elementor-35 .elementor-element.elementor-element-255252d .elementor-nav-menu--main .elementor-item:hover,
+.elementor-35 .elementor-element.elementor-element-255252d .elementor-nav-menu--main .elementor-item.elementor-item-active,
+.elementor-35 .elementor-element.elementor-element-255252d .elementor-nav-menu--main .elementor-item.highlighted,
+.elementor-35 .elementor-element.elementor-element-255252d .elementor-nav-menu--main .elementor-item:focus {
+   font-weight: bold;
+}
+.elementor-35 .elementor-element.elementor-element-255252d .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before,
+.elementor-35 .elementor-element.elementor-element-255252d .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after {
+    display: none;
+}
+
+.elementor-location-footer .elementor-widget-image .elementor-image > a img[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
