@@ -17,14 +17,14 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 */
 
 .back-red-3 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-3.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-3.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
     display: inline-block;	
 }
 .back-red-4 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-4.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-4.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
@@ -32,15 +32,16 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	color: white;
 }
 .back-red-5 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-5.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-5.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
     display: inline-block;	
 	color: white;
+    background-size: contain;
 }
 .back-red-6 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-6.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-6.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 30px;
@@ -50,7 +51,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     margin-left: -12px;
 }
 .back-red-61 {
-    background-image: url(https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-6.svg);
+    background-image: url('/wp-content/uploads/2020/12/back-red-6.svg');
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px 19px 4px 14px;
@@ -61,7 +62,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     background-size: contain;
 }
 .back-red-7 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-7.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-7.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
@@ -69,14 +70,14 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	color: white;
 }
 .back-red-8 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-8.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-8.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
     display: inline-block;	
 }
 .back-red-9 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-9.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-9.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 66px 4px 40px;
@@ -86,7 +87,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     margin-right: -23px;	
 }
 .back-red-91 {
-    background-image: url(https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-9.svg);
+    background-image: url('/wp-content/uploads/2020/12/back-red-9.svg');
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px 23px 4px 17px;
@@ -97,14 +98,14 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     background-size: contain;
 }
 .back-red-10 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-10.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-10.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
     display: inline-block;	
 }
 .back-red-11 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-red-11.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-red-11.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 4px 26px;
@@ -112,7 +113,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 }
 
 .back-white-3 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-3.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-3.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -121,7 +122,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	background-size: contain;
 }
 .back-white-4 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-4.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-4.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 13px 19px;
@@ -130,7 +131,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	background-size: contain;
 }
 .back-white-5 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-5.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-5.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -139,7 +140,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	background-size: contain;
 }
 .back-white-6 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-6.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-6.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -148,7 +149,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	background-size: contain;
 }
 .back-white-7 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-7.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-7.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -157,7 +158,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	background-size: contain;
 }
 .back-white-8 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-8.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-8.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 19px 19px;
@@ -166,7 +167,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	background-size: contain;
 }
 .back-white-9 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-9.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-9.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -174,7 +175,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 /* 	color: #c4161c */
 }
 .back-white-10 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-10.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-10.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -182,7 +183,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	color: #c4161c
 }
 .back-white-11 {
-	background-image: url('https://goclap.com/cotc/wp-content/uploads/2020/12/back-white-11.svg');
+	background-image: url('/wp-content/uploads/2020/12/back-white-11.svg');
 	background-repeat: no-repeat;
     background-position: center;
     padding: 0px 26px 0px 19px;
@@ -227,6 +228,59 @@ div[data-elementor-type='footer'] .elementor-nav-menu--main .elementor-nav-menu 
 }
 #home_slider2 {
 	opacity: 0.5;
+}
+
+.swiper-slide-contents .elementor-button.elementor-size-md {
+    padding: 15px 20px;
+}
+
+.eicon-menu-bar:before {
+    content: url('/wp-content/uploads/2020/12/menu.svg');
+}
+.elementor-menu-toggle {
+	background-color: rgb(0 0 0 / 0%);
+}
+.tp-flipbox__desc-front {
+	color: var( --e-global-color-text );
+    font-family: var( --e-global-typography-secondary-font-family ), Sans-serif;
+    font-size: var( --e-global-typography-secondary-font-size );
+    font-weight: var( --e-global-typography-secondary-font-weight );
+    line-height: var( --e-global-typography-secondary-line-height );
+}
+.tp-flipbox__btn.tp-flipbox__btn_open {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FFFFFF00;
+    display: inline-block;
+    line-height: 1;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 28px;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border-color: white;
+    border: 2px solid;
+    /*padding: 15px 20px;*/
+}
+.tp-flipbox__btn.tp-flipbox__btn_close {
+	font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+	font-size: 15px;
+    border-color: white;
+    border: 1px solid;	
+	border-radius: 50%;
+    text-transform: uppercase;	
+}
+.up-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.elementor-page.elementor-page-17 {
+    background-color: #f3f3f3;
 }
 
 @media (max-width: 767px) {
